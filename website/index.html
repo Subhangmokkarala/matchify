@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchify</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        button {
+            padding: 0.5em 2em;
+            font-size: 1em;
+            color: #ff7e5f;
+            background-color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Matchify</h1>
+        <p>Your perfect match is just a click away.</p>
+        <button onclick="getStarted()">Get Started</button>
+    </div>
+    <script>
+        function getStarted() {
+            alert('Let\'s find your match!');
+        }
+    </script>
+</body>
+</html>
+<style>
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.3;
+    }
+</style>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>{{ user_data['display_name'] }}'s Profile</h1>
+    <h2>Your Top Artists:</h2>
+    <ul>
+        {% for artist in user_data['top_artists'] %}
+        <li>{{ artist }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/match">Find a Match</a>
+</body>
+</html>
