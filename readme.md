@@ -91,3 +91,19 @@ To run Matchify locally with Flask, follow these steps:
     ```bash
     flask run
     ```
+
+
+## things to be fixed
+- [ ] Add a `Dockerfile` for containerization. - we dont need na ? 
+- [ ] fix authentication with required password type
+- [ ] making queries and authentication server secure
+- [ ] data privacy and security 
+- [ ] dynamic dashboard
+- [ ] fixing ui 
+- [ ] data collection
+- [ ] new matching algorithm
+- [ ] stats and compatibity and stars and zodiac signs
+- [ ] personality types and music taste
+- [ ] graphs and charts and extreme patterns recognition
+- [ ] music taste and mood and time of the day
+- [ ] many more features

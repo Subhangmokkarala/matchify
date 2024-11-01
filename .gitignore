@@ -1,0 +1,5 @@
+# Additional environment-specific files
+.env
+.env.development
+.env.production
+.env.test

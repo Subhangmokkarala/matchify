@@ -1,10 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Spotify Matchmaker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Retro font -->
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+            overflow: hidden; /* Prevent scrolling */
+            position: relative;
+        }
+
+        /* Glitter background */
+        .glitter-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/1600x900/?glitter,retro') no-repeat center center/cover;
+            opacity: 0.5; /* Slightly transparent glitter */
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0); /* Dark semi-transparent background */
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0);
+            position: relative; /* Ensure this is above the glitter */
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Text shadow */
+            color: #FFCC00; /* Golden color for a glitter effect */
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        a {
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: #FF69B4; /* Pink color */
+            background-color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            display: inline-block; /* Center button */
+        }
+
+        a:hover {
+            background-color: #f1f1f1; /* Light hover effect */
+            transform: scale(1.05); /* Slight scaling on hover */
+        }
+
+        /* Music elements */
+        .music-icon {
+            width: 100px; /* Icon size */
+            margin: 20px;
+            animation: spin 10s linear infinite; /* Spinning animation */
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Spotify Matchmaker!</h1>
-    <a href="/login">Login with Spotify</a>
+    <div class="glitter-background"></div>
+    <div class="container">
+        <h1>Welcome to Matchify!</h1>
+        <p>Your perfect match is just a Beat away.</p>
+        <a href="/login">Login with Spotify</a>
+    </div>
 </body>
 </html>
